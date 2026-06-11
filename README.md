@@ -1,32 +1,52 @@
 # PRODIGY-CS-3
-## Password Complexity Checker
+## Pixel Manipulation for Image Encryption
 
-## Task 03 – Password Strength Assessment Tool
+## Task 02 – Pixel-Based Image Encryption
 ## Description
-This project is a Python-based password strength checker that evaluates password security based on different complexity rules.
+This project is a basic image encryption and decryption tool developed using Python and the Pillow library. The program works by manipulating image pixel values to encrypt and decrypt images.
+
+## Concept
+Each pixel’s RGB (Red, Green, Blue) values are modified using mathematical operations.
+
+Encryption: (R + key, G + key, B + key)
+
+Decryption: (R - key, G - key, B - key)
+
+The modulo operation ensures pixel values remain within the valid range of 0–255.
 
 ## Features
-: Checks password length
-: Detects uppercase and lowercase letters
-: Detects numbers
-: Detects special characters
-: Provides strength rating and suggestions
+. Image encryption using pixel manipulation
+. Image decryption support
+. Command line interface
+. Uses Python Pillow library
+## Requirements
+: Install Pillow library before running the program:
+* pip install pillow *
+
+## How to Use
+Add the image file inside the project folder
+
+Run the program:
+* python image_encryptor.py *
+
+## Choose:
+'e' for encryption
+'d' for decryption
+
+## Enter:
+image file name
+encryption key
+
+## Output Files:
+Encrypted image: encrypted_image.png
+Decrypted image: decrypted_image.png
 
 ## Technologies Used
 * Python
-* Regex (re module)
-
-## How to Run
-* python password_checker.py *
-
-## Password Strength Levels
-. Weak
-. Medium
-. Strong
+* Pillow Library
 
 ## Author
 Khusbu
 Cyber Security Intern @ Prodigy InfoTech
-
 
 
